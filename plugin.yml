@@ -1,0 +1,20 @@
+name: BlockBlocker
+version: 1.0.0
+api: [5.0.0]
+main: Cryotap\BlockBlocker\Main
+author: Cryotap
+description: Block using blocks in selected worlds.
+
+commands:
+  bldisable:
+    description: Block blocker editor
+    usage: /bldisable
+    permission: bldisable.editor
+
+permissions:
+  bldisable.editor:
+    default: op
+    description: Deny placing certain blocks.
+  bldisable.bypass:
+    default: op
+    description: Bypass block denying.

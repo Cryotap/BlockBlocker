@@ -1,0 +1,6 @@
+disableAll: true
+disableBlocker: false
+blocksDisabled:
+- Concrete Powder
+blockDisabledWorlds:
+- world
