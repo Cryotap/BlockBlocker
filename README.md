@@ -1,5 +1,9 @@
-# BlockBlocker
+## General
 Deny the usage of selected blocks in selected worlds.
+
+[![](https://poggit.pmmp.io/shield.state/BlockBlocker)](https://poggit.pmmp.io/p/BlockBlocker)
+
+[![](https://poggit.pmmp.io/shield.api/BlockBlocker)](https://poggit.pmmp.io/p/BlockBlocker)
 
 ## Commands | Perms
 /bldisable | bldisable.editor
