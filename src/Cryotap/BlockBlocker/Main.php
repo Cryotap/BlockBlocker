@@ -24,7 +24,7 @@ class Main extends PluginBase implements Listener {
         $world = $event->getPlayer()->getWorld()->getFolderName();
 		$this->reloadConfig();
         $config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
-		if (!$event->getPlayer()->hasPermission("bldisable.bypass")) {
+		if (!$event->getPlayer()->hasPermission("blockblocker.disable.bypass")) {
 		$blocksDisabled = $config->get("blocksDisabled", []);
         $blockDisabledWorlds = $config->get("blockDisabledWorlds", []);
 
@@ -48,7 +48,7 @@ class Main extends PluginBase implements Listener {
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
         if ($command->getName() === "bldisable") {
             if ($sender instanceof Player) {
-                if ($sender->hasPermission("bldisable.editor")) {
+                if ($sender->hasPermission("blockblocker.disable.editor")) {
                     $this->openMainForm($sender);
                 } else {
                     $sender->sendMessage("You don't have permission to use this command.");

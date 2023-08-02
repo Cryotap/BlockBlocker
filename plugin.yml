@@ -9,12 +9,12 @@ commands:
   bldisable:
     description: Block blocker editor
     usage: /bldisable
-    permission: bldisable.editor
+    permission: blockblocker.disable.editor
 
 permissions:
-  bldisable.editor:
+  blockblocker.disable.editor:
     default: op
     description: Deny placing certain blocks.
-  bldisable.bypass:
+  blockblocker.disable.bypass:
     default: op
     description: Bypass block denying.
